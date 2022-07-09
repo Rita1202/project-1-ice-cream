@@ -1,0 +1,17 @@
+.about {
+  background-color: var(--background-light-pink);
+  background-image: url('../images/about/about_bg_mob_left@1x.png'),
+    url('../images/about/about_bg_mob_right@1x.png');
+  background-repeat: no-repeat;
+  //   background-position: top 730px left, top 740px right;
+}
+.about-text-bold {
+  @include font(12px, 19px, 500);
+  color: var(--main-text-theme-light);
+  margin-bottom: 28px;
+}
+.about-text-normal {
+  @include font(12px, 19px, 500);
+  color: var(--secondary-text-theme-light);
+  margin-bottom: 20px;
+}
