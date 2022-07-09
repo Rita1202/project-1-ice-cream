@@ -1,0 +1,37 @@
+.modal-btn {
+  padding: 12px 37px;
+  font-family: inherit;
+  @include font(16px, 21px, 700);
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  color: var(--accent-text-dark);
+  background: var(--main-text-theme-bright);
+  border-radius: 22px;
+  transition: background 250ms linear;
+
+  &:hover,
+  &:focus {
+    background: var(--hover-btn-light);
+  }
+}
+
+.modal-btn-dark {
+  background: var(--accent-text-dark);
+  color: var(--main-text-theme-bright);
+
+  &:hover,
+  &:focus {
+    background: var(--hover-btn-dark);
+  }
+}
+
+.modal-btn-icon {
+  margin-left: 12px;
+  border: 2px var(--accent-text-dark);
+  stroke: var(--accent-text-dark);
+}
+
+.modal-btn-icon-dark {
+  stroke: var(--main-text-theme-bright);
+}

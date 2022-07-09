@@ -1,0 +1,40 @@
+.title {
+  @include font(34px, 39px);
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: var(--secondary-font-family);
+  text-transform: uppercase;
+  color: var(--accent-text-dark);
+}
+
+.title-desc {
+  margin-bottom: 15px;
+  @include font(18px, 21px);
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: var(--secondary-font-family);
+  text-transform: uppercase;
+  color: var(--accent-text-light);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    @include font(48px, 55px);
+  }
+
+  .title-desc {
+    margin-bottom: 18px;
+    @include font(26px, 30px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    @include font(58px, 66px);
+  }
+
+  .title-desc {
+    margin-bottom: 16px;
+    @include font(30px, 34px);
+  }
+}
