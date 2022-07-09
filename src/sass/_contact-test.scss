@@ -1,0 +1,36 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-section {
+    padding-top: 50px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(255, 107, 10, 0.5);
+    border: 1px solid black;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
