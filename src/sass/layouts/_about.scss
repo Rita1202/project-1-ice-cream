@@ -1,9 +1,18 @@
 .about {
   background-color: var(--background-light-pink);
+  padding: 60px 0 40px 0;
   background-image: url('../images/about/about_bg_mob_left@1x.png'),
     url('../images/about/about_bg_mob_right@1x.png');
   background-repeat: no-repeat;
-  //   background-position: top 730px left, top 740px right;
+  background-position: top 520px left, top 530px right;
+  background-size: 110px, 110px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/about_bg_mob_left@2x.png'),
+      url('../images/about/about_bg_mob_rigth@2x.png');
+  }
 }
 .about-text-bold {
   @include font(12px, 19px, 500);
@@ -14,4 +23,22 @@
   @include font(12px, 19px, 500);
   color: var(--secondary-text-theme-light);
   margin-bottom: 20px;
+}
+.about-extra-text {
+  display: none;
+  @include font(12px, 19px, 500);
+  color: var(--accent-text-dark);
+  margin-bottom: 20px;
+}
+.read-more {
+  width: 176px;
+}
+input:checked + .about-extra-text {
+  display: block;
+}
+input:checked ~ .read-more .more {
+  display: none;
+}
+input:checked ~ .read-more .less {
+  display: inline;
 }
