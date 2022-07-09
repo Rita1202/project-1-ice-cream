@@ -1,0 +1,23 @@
+.read-more-btn {
+  @include flexCentered;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--main-text-theme-bright);
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-dark);
+  }
+}
+
+.read-more-btn-icon {
+  fill: var(--accent-text-dark);
+  transition: fill 250ms linear;
+
+  .read-more-btn:hover &,
+  .read-more-btn:focus & {
+    fill: var(--main-text-theme-bright);
+  }
+}
