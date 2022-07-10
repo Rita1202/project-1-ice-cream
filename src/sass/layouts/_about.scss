@@ -18,17 +18,20 @@
   @include font(12px, 19px, 500);
   color: var(--main-text-theme-light);
   margin-bottom: 28px;
+  padding-right: 58px;
 }
 .about-text-normal {
   @include font(12px, 19px, 500);
   color: var(--secondary-text-theme-light);
   margin-bottom: 20px;
+  padding-right: 58px;
 }
 .about-extra-text {
   display: none;
   @include font(12px, 19px, 500);
   color: var(--accent-text-dark);
   margin-bottom: 20px;
+  padding-right: 58px;
 }
 .read-more {
   width: 176px;
@@ -41,4 +44,37 @@ input:checked ~ .read-more .more {
 }
 input:checked ~ .read-more .less {
   display: inline;
+}
+input:checked ~ .read-more .btn-icon {
+  transform: rotate(-90deg);
+}
+.read-more .btn-icon {
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 60px 0;
+  }
+
+  .about-content {
+    @include flexCentered;
+    margin-top: 40px;
+
+    &-img {
+      margin-right: 32px;
+    }
+  }
+  .about-text-bold {
+    @include font(14px, 25px, 500);
+    margin-bottom: 26px;
+    padding-right: 0;
+  }
+  .about-text-bold,
+  .about-text-normal,
+  .about-extra-text {
+    padding-right: 0;
+  }
 }
