@@ -14,11 +14,9 @@
       url('../images/about/about_bg_mob_rigth@2x.png');
   }
 }
-.about-content {
-  margin-top: 32px;
-}
+
 .about-content-img {
-  margin: 0 auto;
+  margin: 32px auto 0 auto;
 }
 .about-text-bold {
   @include font(12px, 19px, 500);
@@ -72,18 +70,21 @@ input:checked ~ .read-more .btn-icon {
 
     &-img {
       margin-right: 32px;
+      margin-top: 40px;
     }
   }
-  .about-content-text {
-    margin-top: 40px;
-  }
+  //   .about-content-text {
+  //     margin-top: 40px;
+  //   }
   .about-text-bold {
     @include font(14px, 25px, 500);
+    margin: 40px 0 0 0;
+
     padding-right: 0;
   }
   .about-text-normal {
     @include font(14px, 25px, 500);
-    margin-top: 23px;
+    margin: 23px 0 0 0;
   }
   .about-extra-text {
     @include font(14px, 25px, 500);
@@ -125,14 +126,11 @@ input:checked ~ .read-more .btn-icon {
   }
   .about-text-bold {
     @include font(16px, 28px, 500);
-    margin-bottom: 32px;
-    margin-right: 106px;
-    margin-left: 99px;
+    margin: 0 106px 0 99px;
   }
   .about-text-normal,
   .about-extra-text {
-    margin-right: 106px;
-    margin-left: 99px;
+    margin: 32px 106px 0 99px;
   }
   .read-more {
     margin-left: 99px;
