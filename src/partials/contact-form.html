@@ -1,0 +1,87 @@
+<div class="test container" style="background-color: pink; height: 600px">
+  <button class="modal-btn" data-modal-open>
+    Buy now
+    <svg class="modal-btn-icon" width="7" height="10">
+      <use href="/src/images/sprite.svg#icon-arrow-small"></use>
+    </svg>
+  </button>
+</div>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="contact-form-wrapper">
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-close-btn-icon" width="14" height="14">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="contact-from-desc">
+      Leave your contact details, we will call you back
+    </p>
+    <form class="contact-form" action="">
+      <div class="contact-form-field">
+        <input
+          class="contact-form-input"
+          id="contact-form-name"
+          type="text"
+          name="name-user"
+          minlength="2"
+          required
+          placeholder=" "
+        />
+        <label class="contact-form-label" for="contact-form-name"> Name </label>
+      </div>
+      <div class="contact-form-field">
+        <input
+          class="contact-form-input"
+          id="contact-form-tel"
+          type="tel"
+          required
+          name="name-tel"
+          placeholder=" "
+        />
+        <label class="contact-form-label" for="contact-form-tel">
+          Telephone
+        </label>
+      </div>
+      <div class="contact-form-field">
+        <input
+          class="contact-form-input"
+          id="contact-form-email"
+          type="email"
+          required
+          name="name-email"
+          placeholder=" "
+        />
+        <label class="contact-form-label" for="contact-form-email">
+          E-mail
+        </label>
+      </div>
+      <label>
+        <textarea
+          class="contact-form-textarea"
+          name="user-comment"
+          id=""
+          placeholder="Input your comment"
+        ></textarea>
+      </label>
+
+      <div class="wrapper-checkbox">
+        <input
+          class="visually-hidden contact-form-input-checkbox"
+          id="contact-form-checkbox"
+          type="checkbox"
+          name="form-contact-policy"
+        />
+        <label class="contact-form-label-checkbox" for="contact-form-checkbox"
+          >I agree to the newsletter and accept &nbsp;
+          <a class="contact-form-link" href="">terms of contract</a></label
+        >
+      </div>
+      <button class="contact-form-btn modal-btn modal-btn-dark" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="../src/js/modal.js"></script>
