@@ -61,20 +61,70 @@ input:checked ~ .read-more .btn-icon {
 
   .about-content {
     @include flexCentered;
-    margin-top: 40px;
 
     &-img {
       margin-right: 32px;
     }
+  }
+  .about-content-text {
+    margin-top: 40px;
   }
   .about-text-bold {
     @include font(14px, 25px, 500);
     margin-bottom: 26px;
     padding-right: 0;
   }
+  .about-text-normal {
+    @include font(14px, 25px, 500);
+    margin-bottom: 40px;
+  }
+  .about-extra-text {
+    @include font(14px, 25px, 500);
+  }
   .about-text-bold,
   .about-text-normal,
   .about-extra-text {
     padding-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url('../images/about/about_bg_desk_left@1x.png'),
+      url('../images/about/about_bg_desk_right@1x.png');
+    background-repeat: no-repeat;
+    background-size: 450px, 568px;
+    background-position: top 340px left, top 380px right;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/about_bg_desk_left@2x.png'),
+        url('../images/about/about_bg_desk_rigth@2x.png');
+    }
+  }
+
+  .about-content {
+    align-items: flex-start;
+
+    &-img {
+      margin-top: 60px;
+    }
+  }
+  .about-content-text {
+    margin-top: 150px;
+  }
+  .about-text-bold {
+    @include font(16px, 28px, 500);
+    margin-bottom: 32px;
+    margin-right: 106px;
+    margin-left: 99px;
+  }
+  .about-text-normal,
+  .about-extra-text {
+    margin-right: 106px;
+    margin-left: 99px;
+  }
+  .read-more {
+    margin-left: 99px;
   }
 }
