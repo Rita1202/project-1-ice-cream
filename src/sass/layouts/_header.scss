@@ -1,7 +1,7 @@
 .page-header {
-    background: tan;
-}
-.page-header {
+    position: absolute;
+    width: 100vw;
+    z-index: 999;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -18,6 +18,15 @@
 }
 .burger{
     background-color: transparent;
+}
+.burger-icon {
+    transition: box-shadow 250ms linear;
+    
+    .burger:hover &,
+    .burger:focus {
+            box-shadow: 2px 2px 4px var(--main-text-theme-light);
+        }
+
 }
 @media screen and (min-width: 768px) {
     .page-header {
