@@ -14,24 +14,31 @@
       url('../images/about/about_bg_mob_rigth@2x.png');
   }
 }
+.about-content {
+  margin-top: 32px;
+}
+.about-content-img {
+  margin: 0 auto;
+}
 .about-text-bold {
   @include font(12px, 19px, 500);
   color: var(--main-text-theme-light);
   margin-bottom: 28px;
-  padding-right: 58px;
+  margin-top: 40px;
+  padding-right: 60px;
 }
 .about-text-normal {
   @include font(12px, 19px, 500);
   color: var(--secondary-text-theme-light);
   margin-bottom: 20px;
-  padding-right: 58px;
+  padding-right: 60px;
 }
 .about-extra-text {
   display: none;
   @include font(12px, 19px, 500);
   color: var(--accent-text-dark);
   margin-bottom: 20px;
-  padding-right: 58px;
+  padding-right: 60px;
 }
 .read-more {
   width: 176px;
@@ -60,7 +67,8 @@ input:checked ~ .read-more .btn-icon {
   }
 
   .about-content {
-    @include flexCentered;
+    display: flex;
+    justify-content: center;
 
     &-img {
       margin-right: 32px;
