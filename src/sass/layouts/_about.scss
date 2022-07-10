@@ -1,11 +1,11 @@
 .about {
   background-color: var(--background-light-pink);
-  padding: 60px 0 40px 0;
+  padding-top: 60px;
   background-image: url('../images/about/about_bg_mob_left@1x.png'),
     url('../images/about/about_bg_mob_right@1x.png');
   background-repeat: no-repeat;
   background-position: top 520px left, top 530px right;
-  background-size: 110px, 110px;
+  background-size: 150px, 150px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -63,7 +63,7 @@ input:checked ~ .read-more .btn-icon {
     background-image: none;
     display: flex;
     flex-direction: row;
-    padding: 60px 0 60px 0;
+    padding-top: 60px;
   }
 
   .about-content {
@@ -79,12 +79,11 @@ input:checked ~ .read-more .btn-icon {
   }
   .about-text-bold {
     @include font(14px, 25px, 500);
-    margin-bottom: 26px;
     padding-right: 0;
   }
   .about-text-normal {
     @include font(14px, 25px, 500);
-    margin-bottom: 40px;
+    margin-top: 23px;
   }
   .about-extra-text {
     @include font(14px, 25px, 500);
@@ -93,6 +92,9 @@ input:checked ~ .read-more .btn-icon {
   .about-text-normal,
   .about-extra-text {
     padding-right: 0;
+  }
+  .read-more {
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
