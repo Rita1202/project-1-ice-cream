@@ -28,6 +28,9 @@
   background: var(--background-light-pink);
   border-radius: 5px;
   transition: transform 250ms linear;
+  &--map {
+    max-width: 800px;
+  }
 
   .backdrop.is-hidden & {
     transform: scale(0);
@@ -45,6 +48,7 @@
   background-color: var(--accent-text-dark);
   border-radius: 50%;
   transition: background 250ms linear;
+  z-index: 2;
 
   &:hover,
   &:focus {
