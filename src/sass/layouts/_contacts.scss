@@ -1,13 +1,15 @@
 .contact-section {
-    background-image: linear-gradient(var(--main-text-theme-bright) 30%, var(--background-light-pink) 70%);
+    background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 23%, var(--background-light-pink) 23% 100%);
     padding-top: 60px;
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
+        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 50%, var(--background-light-pink) 50% 100%);
         padding-top: 80px;
     }
 
     @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 22.5%, var(--background-light-pink) 22.5% 100%);
         padding-top: 120px;
         padding-bottom: 120px;
     }
