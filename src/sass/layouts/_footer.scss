@@ -1,15 +1,15 @@
 .footer{
     background-color: var(--background-light-pink);
-    padding-top: 40px;
     padding-bottom: 3px;
 }
-// .footer-container{
-//     display: flex;
-//     flex-direction: column;
-// }
+.footer-content{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E1E1E1;
+}
 .footer-title{
     display: block;
     width: 234px;
+    margin-bottom: 40px;
     font-family: var(--secondary-font-family);
     font-style: normal;
     @include font(18px, 21px, 400);
@@ -19,9 +19,7 @@
 }
 .footer-title-second-part{
     display: block;
-    width: 234px;
     margin-top: 16px;
-    margin-bottom: 40px;
     font-family: var(--secondary-font-family);
     font-style: normal;
     @include font(34px, 39px, 400);
@@ -33,26 +31,21 @@
 .footer-block{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 .social-list{
     display: flex;
-    margin-bottom: 40px;
     margin-left: auto;
 }
 .social-list-item:not(:first-child){
     margin-left: 28px;
 }
-.social-list-item{
-    background-color: #FEA5BB;
-    border-radius: 50%;
-}
 .social-list-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    background-color: #FEA5BB;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     transition: background-color 250ms linear;
 }
@@ -64,6 +57,7 @@
     width: 230;
     height: 22px;
     margin-left: auto;
+    margin-top: 40px;
 }
 .footer-contacts-text{
     display: flex;
@@ -83,6 +77,11 @@
         
     color: var(--accent-text-dark);
 }
+.footer-copyright{
+    max-width: 180px;
+    height: 42px;
+    margin-top: 16px;
+}
 .copyright{
     font-family: var(--main-font-family);
     @include font(14px, 21px, 700);
@@ -91,15 +90,6 @@
     text-align: center;
     color: var(--secondary-text-theme-light);
 }
-.copyright::before {
-    content: "";
-    display: block;
-    width: 1000px;
-    left: -20%;
-    height: 1px;
-    background: #E1E1E1;
-}
-
 // @media screen and (min-width: 768px){
 //     .footer-container {
 //         flex-direction: row;
