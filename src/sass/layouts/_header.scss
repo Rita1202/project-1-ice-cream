@@ -20,14 +20,15 @@
     background-color: transparent;
 }
 .burger-icon {
-    transition: box-shadow 250ms linear;
+    stroke: var(--accent-text-dark);
+    transition: stroke 250ms linear;
     
     .burger:hover &,
-    .burger:focus {
-            box-shadow: 2px 2px 4px var(--main-text-theme-light);
-        }
-
+    .burger:focus &{
+        stroke: var(--main-text-theme-bright);
+    }
 }
+
 @media screen and (min-width: 768px) {
     .page-header {
         padding-top: 32px;
@@ -72,7 +73,13 @@
     }
     .menu-link {
         @include font(16px, 21px, 700);
-        color: var(--main-text-theme-bright)
+        color: var(--main-text-theme-bright);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-text-dark);
+
+        }
     }
     .menu-link.active {
         color: var(--accent-text-dark);

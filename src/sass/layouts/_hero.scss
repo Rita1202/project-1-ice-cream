@@ -64,6 +64,7 @@
     right: 32px;
     width: 171px;
     z-index: 1; 
+    animation: transformX 1500ms ease-in-out;
 }
 
 .ice-cream-thumb::before {
@@ -76,6 +77,24 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--accent-text-light);
+    animation: changeopacity 1500ms ease-in-out;
+}
+
+@keyframes changeopacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes transformX {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .fact-list, .hero-text, .milk, .woman{
@@ -125,9 +144,9 @@
             content: '';
             display: inline-block;
             position: absolute;
+            z-index: -99;
             top: 0;
             right: -8px;
-            z-index: 0;
             width: 16px;
             height: 16px;
             border-radius: 50%;
@@ -154,7 +173,7 @@
         margin-top: 7px;
     }
     .ice-cream {
-        right: 322px;
+        right: 302px;
         width: 143px;
     }
     .ice-cream-thumb::before {
@@ -167,6 +186,7 @@
         bottom: 16px;
         left: 32px;
         width: 152px;
+        animation: changeopacity 1500ms ease-in-out; 
     }
     .woman {
         display: block;
@@ -175,6 +195,7 @@
         right: 32px;
         width: 190px;
         z-index: 10;
+        animation: transformX 1500ms ease-in-out;
     }
 }
 
@@ -226,8 +247,10 @@
         width: 236px;
     }
     .ice-cream-thumb::before {
+        width: 534px;
+        height: 534px;
         top: 54px;
-        right: 151px;
+        right: 150px;
     }
     .milk {        
         bottom: 60px;
