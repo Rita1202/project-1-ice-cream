@@ -1,0 +1,265 @@
+.hero {
+    background-color: var(--background-hero);
+    overflow: hidden;
+}
+.hero-container {
+    position: relative;
+    padding-top: 194px;
+    padding-bottom: 158px;
+}
+
+ .hero-title{
+    position: relative;
+    z-index: 2;
+    display: block;
+    max-width: 220px;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font-family);
+    @include font(26px, 30px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-text-theme-bright);
+}
+.hero-title-accent{
+    @include font(48px, 46px);
+    color: var(--accent-text-dark);
+}
+.hero-list {
+    position: relative;
+    z-index: 2;
+    display:flex;
+    align-items: center;
+}
+
+.hero-item:first-child {
+    margin-right: 8px;
+}
+
+.hero-link {
+    @include font(8px, 10px);
+    display: block;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 20px;
+    color: var(--main-text-theme-bright);
+    background-color: var(--accent-text-dark);
+    color: var(--main-text-theme-bright);
+    transition: background-color 250ms linear; 
+
+    &:hover,
+    &:focus {
+        background-color: var(--hover-btn-light);
+        color: var(--accent-text-dark);
+    }
+}
+.bright-theme {
+    color: var(--accent-text-dark);
+    background-color: var(--main-text-theme-bright);
+}   
+
+.ice-cream {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    width: 171px;
+    z-index: 1; 
+    animation: transformX 1500ms ease-in-out;
+}
+
+.ice-cream-thumb::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 83px;
+    right: -62px;
+    width: 344px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: var(--accent-text-light);
+    animation: changeopacity 1500ms ease-in-out;
+}
+
+@keyframes changeopacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes transformX {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.fact-list, .hero-text, .milk, .woman{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+        display: flex;
+        padding-top: 92px;
+        padding-bottom: 56px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .hero-wrapper {
+        margin-right: 490px;
+        margin-bottom: 60px;
+    }
+    .hero-title {
+        @include font(22px, 25px);
+        max-width: 162px;
+    }
+    .hero-title-accent {
+        @include font(34px, 31px);
+    }
+    .fact-list{ 
+        display: block;
+    }    
+    .accent-numbers {
+        display: block;
+        font-family: var(--secondary-font-family);
+        @include font(28px, 32px);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent-text-dark);
+    }
+
+    .fact-text{
+        @include font(8px, 10px);
+        text-align: right;
+        color: var(--main-text-theme-bright); 
+        position: relative; 
+        z-index: 10; 
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            z-index: -99;
+            top: 0;
+            right: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--main-text-theme-bright);
+        }
+    }
+    .fact-item:first-child {
+        margin-bottom: 16px;
+    }
+    .hero-text {
+        display: block;
+        position: relative;
+        z-index: 2;
+        align-self: flex-end;
+        @include font(8px, 12px);
+        color: var(--main-text-theme-bright);
+        max-width: 114px;
+        margin-left: 152px;
+
+    }
+    .read-more-btn-hero{
+        width: 18px;
+        height: 18px;
+        margin-top: 7px;
+    }
+    .ice-cream {
+        right: 302px;
+        width: 143px;
+    }
+    .ice-cream-thumb::before {
+        top: 43px;
+        right: 185px;
+    }
+    .milk{
+        display: block;
+        position: absolute;
+        bottom: 16px;
+        left: 32px;
+        width: 152px;
+        animation: changeopacity 1500ms ease-in-out; 
+    }
+    .woman {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        width: 190px;
+        z-index: 10;
+        animation: transformX 1500ms ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-container {
+        padding-top: 147px;
+        padding-bottom: 84px;
+    }
+    .hero-wrapper {
+        margin-right: 800px;
+        margin-bottom: 108px;
+    }
+    .hero-title {
+        @include font(38px, 44px);
+        max-width: 278px;
+    }
+    .hero-title-accent {
+        @include font(58px, 52px);
+    }
+    .hero-link {
+        @include font(14px, 18px);
+        padding: 12px 22px;
+    }
+    .accent-numbers {
+        @include font(46px, 53px);
+    }
+    .fact-text {
+        @include font(14px, 18px);
+     
+        &::before {
+            width: 30px;
+            height: 30px;
+            right: -18px;
+            top: -4px;
+        }
+    }
+    .hero-text {
+        @include font(14px, 20px);
+        max-width: 200px;
+        margin-left: 226px;
+    }
+    .read-more-btn-hero {
+        width: 26px;
+        height: 26px;
+        margin-top: 20px;
+    }
+    .ice-cream {
+        right: 330px;
+        width: 236px;
+    }
+    .ice-cream-thumb::before {
+        width: 534px;
+        height: 534px;
+        top: 54px;
+        right: 150px;
+    }
+    .milk {        
+        bottom: 60px;
+        left: 15px;
+        width: 213px;
+    }
+    .woman {
+        right: 15px;
+        width: 304px;
+        
+    }
+}
