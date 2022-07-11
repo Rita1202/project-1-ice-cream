@@ -1,5 +1,6 @@
 .gallery {
   background-image: linear-gradient(#fff5f6 42%, #fff 42%, #fff 58%);
+  padding-bottom: 60px;
 }
 
 .gallery-list {
@@ -69,6 +70,12 @@
 @media screen and (min-width: 768px) {
   .gallery-picture.container {
     padding: 0 62px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .gallery {
+    padding-bottom: 60px;
   }
 }
 
