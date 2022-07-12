@@ -72,6 +72,15 @@
   width: 12px;
   height: 12px;
 }
+.description-txt {
+  display: block;
+
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1 0 1px,
+    transparent 1px 31px
+  );
+}
 @media screen and (min-width: 768px) {
   .customer-wrapper {
     padding-top: 20px;
