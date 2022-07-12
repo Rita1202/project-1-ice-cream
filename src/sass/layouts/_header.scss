@@ -1,6 +1,8 @@
 .page-header {
+  left: 0; // если есть position:absolute - обязательно нужно хотя-бы одну точку привязки, а для растягивания на всю ширину - left: 0; right: 0;
+  right: 0;
+  top: 0;
   position: absolute;
-  width: 100vw;
   z-index: 999;
   padding-top: 8px;
   padding-bottom: 8px;
