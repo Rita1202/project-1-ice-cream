@@ -13,7 +13,6 @@
   width: 280px;
   border-radius: 24px;
   padding: 160px 40px 40px 40px;
-
   transition: transform 250ms linear;
 
   &:hover {
@@ -42,7 +41,6 @@
   position: relative;
   margin-bottom: 70px;
   text-transform: uppercase;
-
   @include font(20px, 23px, 400);
   text-align: center;
   letter-spacing: 0.04em;
@@ -54,14 +52,11 @@
     content: '';
     width: 280px;
     height: 280px;
-
     position: absolute;
     display: block;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -112%);
-
     background-image: url('../images/products/icecream-mobile.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -94,12 +89,10 @@
   content: '';
   width: 280px;
   height: 280px;
-
   position: absolute;
   display: block;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -112%);
 
   background-image: url('../images/products/icecoffee-mobile.png');
@@ -117,14 +110,11 @@
   content: '';
   width: 280px;
   height: 280px;
-
   position: absolute;
   display: block;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -112%);
-
   background-image: url('../images/products/milkshake-mobile.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -140,8 +130,7 @@
   @include font(14px, 21px, 700);
   text-align: center;
   letter-spacing: 0.04em;
-
-  color: #ffffff;
+  color: var(--main-text-theme-bright);
   margin-bottom: 32px;
 }
 

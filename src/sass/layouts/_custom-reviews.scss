@@ -14,11 +14,6 @@
   padding-right: 50px;
   padding-top: 30px;
   padding-bottom: 17px;
-  &:after {
-    font-family: sans;
-    
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAoCAYAAAC1mQk2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgBvVnbUeMwFL02y3++mYGYCjZUQNIBVEC2goUKcCogWwGhA6iA0EG2gigww7f3kw9gz2FkcBLrYVvizGT8kKLjI11J914lYsFyuRwmSXKG3xCPmX5d4Hnx/v6+eHt7uzs8PJxLQHhw3oBz4WonMTW+s7NziYaG4obCL+/3+zfSAeA8SdP0Sr7EGAGR89fX14mtU7eErVarHJdLaQiQ3YLsAmRKGgKcU1x+S3NMMYIUWGwWJBsEubQQVYEC0aiJuMfHx3tPy2jEmZY3AUQRGczpHmaV+VTmSHUUVeXsVV9+jBg/BIVLCQf24lGdiZQA5xic1xIInHcHBwej8vljxKhYwoIdZRx93ZFdrWMNHHm0e14+p1wBxWMlaoFz3XYdhjE42VmlSaZY1s8kErhlSP0HtFkBfdAr204xhAOJBG0ea5NaP0fjBD7MMY1MwtHZtIiofECPUyCVyIhpESagM48pTElEaJ+vCiWRwc5M6VxKXGTVB+0hFBIR0DTgiM0kMp6fn/sbr2YSF70Uu/WdfIN5VAGv5I/ERS/VRL/kG6HNMZeISDXRHJepfCP0qEWb35/LPQLFC1w6BYsmvLy8/Nt8RwcZ4k4lwjRgpL22j0HcWJqZiBJ3rxcmL58myViKQap4Ah89F/eqWmxt0BA3YcihGzD+Eb+c9cSxwrH3bOUUhwXsVM9z5WhnnGXZCPfWjuAW9sNAxkZGcE0G3MVxX/p7BZ4X+/v7D2Vd1PmLd1YS8QA4Z7jMnp6ejiFyUOFUu7u78729vVWlTWVrC99z+8NBxo/qNMFJ0qS+7rQHaY+CbXT2FfHhPy3Fqjq6oUDPwlRWmmlnYSA5sRTnEhiMvm15EsSAM147CWN4YCHhihd8tGAhY/maf2vggldaSCdhjmRM3ibHaIPOfhmjb4xWXt63FqaTnJmhWHXNDNdBJ51MozWrzudWwnQO0tRz9ChGEhiujoSwSfVFY2HMB4o9sRrcBB0dSb/zwpgJ9oFHknMKEwwaknhkqNmRW3tlIv4EzP5cWaosIOpIAsLjsGKqnfctWD0PgukyjFLuIFDaUw8Crn5Y4a4deX2elU1MhYmDYKhNL7NUa3zC4uA80Zy9LpzWOaYd4MxSpQgpisBI0TI6iSKswhjCiDmUCC6KwOEhwxdTvOVtHc5V0ZAPKUUFD+31R9elKRqZvFMY8yGbES7FxhBVaZ9bhqq8ajyPvfYxni3Ll3mM6/aNkND5kNJSVAyT/wT2lEv8oh051QHn09e+x76b+A9RBvajZpVszAAAAABJRU5ErkJggg==');
-  }
 }
 .customer-description {
   @include font(12px, 31px, 500);
@@ -34,14 +29,15 @@
     position: absolute;
     top: 0;
     z-index: -1;
-    color: #E1E1E1;
+    color: var(--element-divider);
     width: 54px;
     height: 40px;
     background-image: url('../images/customer-reviews/icon-quotes.svg');
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
   }
 }
+
 .customer-name {
   @include font(14px, 26px, 500);
 
@@ -84,6 +80,7 @@
     padding-right: 6px;
     margin-bottom: 40px;
   }
+
   .customer-description {
     padding-left: 44px;
     padding-right: 44px;
@@ -92,13 +89,16 @@
     letter-spacing: 0.04em;
     @include font(14px, 30px, 500);
   }
+
   .mySwiper {
     width: 620px;
     margin: 0 auto;
   }
+
   .swiper-pagination {
     margin-top: 32px;
   }
+
   .customer-name {
     @include font(16px, 30px, 500);
   }
@@ -109,15 +109,18 @@
     padding: 31px 73px;
     margin-bottom: 36px;
   }
+
   .customer-description {
     padding-top: 15px;
     padding-left: 37px;
     padding-right: 37px;
     @include font(16px, 30px, 500);
   }
+
   .mySwiper {
     width: 968px;
   }
+
   .customer-name {
     @include font(20px, 37px, 500);
   }

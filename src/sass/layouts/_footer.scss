@@ -1,10 +1,18 @@
+.footer-copyright {
+  max-width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
 .footer {
   background-color: var(--background-light-pink);
   padding-bottom: 3px;
 }
+
 .footer-content {
   padding-bottom: 40px;
 }
+
 .footer-title {
   display: block;
   width: 234px;
@@ -13,9 +21,9 @@
   font-style: normal;
   @include font(18px, 21px, 400);
   text-transform: uppercase;
-
   color: var(--accent-text-light);
 }
+
 .footer-title-second-part {
   display: block;
   margin-top: 16px;
@@ -24,20 +32,23 @@
   @include font(34px, 39px, 400);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: var(--accent-text-dark);
 }
+
 .footer-block {
   display: flex;
   flex-direction: column;
 }
+
 .social-list {
   display: flex;
   margin-left: auto;
 }
+
 .social-list-item:not(:first-child) {
   margin-left: 28px;
 }
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -48,10 +59,12 @@
   border-radius: 50%;
   transition: background-color 250ms linear;
 }
+
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-text-dark);
 }
+
 .footer-contacs {
   display: flex;
   width: 230;
@@ -59,9 +72,9 @@
   margin-left: auto;
   margin-top: 40px;
 }
+
 .footer-contacts-text {
   display: flex;
-  font-family: var(--main-font-family);
   @include font(12px, 22px, 700);
 
   text-align: right;
@@ -70,7 +83,6 @@
 }
 .footer-contacts-link {
   display: flex;
-  font-family: var(--main-font-family);
   @include font(12px, 22px, 700);
 
   text-align: right;
@@ -78,12 +90,11 @@
   color: var(--accent-text-dark);
 }
 .footer-copyright {
-  height: 42px;
   margin-top: 16px;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--element-divider);
 }
+
 .copyright {
-  font-family: var(--main-font-family);
   @include font(14px, 21px, 700);
   font-style: normal;
   margin: 0 auto;
@@ -93,7 +104,7 @@
 
 @media screen and (max-width: 767px) {
   .copyright {
-    max-width: 180px;
+    max-width: 155px;
   }
 }
 
@@ -102,34 +113,35 @@
     display: flex;
     align-items: center;
   }
+
   .footer-title {
     width: 340px;
     margin-bottom: 0;
     font-family: var(--secondary-font-family);
-    font-style: normal;
     @include font(26px, 30px, 400);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: var(--accent-text-light);
   }
+
   .footer-title-second-part {
     margin-top: 12px;
     font-family: var(--secondary-font-family);
-    font-style: normal;
     @include font(48px, 55px, 400);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--accent-text-dark);
   }
+
   .footer-block {
     margin-left: auto;
   }
+
   .social-list-link {
     width: 34px;
     height: 34px;
   }
+
   .footer-contacs {
     width: 268px;
     height: 26px;
@@ -137,18 +149,13 @@
     margin-left: auto;
     display: flex;
   }
+
   .footer-contacts-text {
-    font-family: var(--main-font-family);
     @include font(14px, 26px, 700);
   }
+
   .footer-contacts-link {
-    font-family: var(--main-font-family);
     @include font(14px, 26px, 700);
-  }
-  .footer-copyright {
-    max-width: 100%;
-    padding-top: 16px;
-    padding-bottom: 8px;
   }
 }
 
@@ -156,26 +163,31 @@
   .footer {
     padding-bottom: 3px;
   }
+
   .footer-content {
     display: flex;
     align-items: flex-start;
     padding-bottom: 60px;
   }
+
   .footer-title {
     width: 100%;
     font-family: var(--secondary-font-family);
     @include font(30px, 34px, 400);
   }
+
   .footer-title-second-part {
     max-width: 100%;
     margin-top: 16px;
     font-family: var(--secondary-font-family);
     @include font(58px, 66px, 400);
   }
+
   .footer-block {
     margin-left: auto;
     margin-top: 0;
   }
+
   .footer-contacs {
     width: 319px;
     height: 30px;
@@ -183,6 +195,7 @@
     margin-left: auto;
     display: flex;
   }
+
   .footer-contacts-text {
     font-family: var(--main-font-family);
     @include font(16px, 30px, 700);
@@ -191,10 +204,5 @@
   .footer-contacts-link {
     font-family: var(--main-font-family);
     @include font(16px, 30px, 700);
-  }
-  .footer-copyright {
-    max-width: 100%;
-    padding-top: 7px;
-    padding-bottom: 7px;
   }
 }
