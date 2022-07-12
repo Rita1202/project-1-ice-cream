@@ -1,7 +1,7 @@
 .advantages {
   background-color: var(--background-light-pink);
   padding-top: 40px;
-  padding-bottom: 87px;
+  padding-bottom: 60px;
   &-content {
     position: relative;
     padding-top: 66px;
@@ -90,7 +90,7 @@
 @media screen and (min-width: 1280px) {
   .advantages {
     padding-top: 121px;
-    padding-bottom: 209px;
+    padding-bottom: 120px;
     &-content {
       width: calc(100% / 3);
       padding-top: 90px;
