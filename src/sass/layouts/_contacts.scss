@@ -1,229 +1,271 @@
 .contact-section {
-    background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 23%, var(--background-light-pink) 23% 100%);
-    padding-top: 60px;
-    padding-bottom: 40px;
+  background-image: linear-gradient(
+    180deg,
+    var(--main-text-theme-bright) 0% 23%,
+    var(--background-light-pink) 23% 100%
+  );
+  padding-top: 60px;
+  padding-bottom: 40px;
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 50%, var(--background-light-pink) 50% 100%);
-        padding-top: 80px;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      180deg,
+      var(--main-text-theme-bright) 0% 50%,
+      var(--background-light-pink) 50% 100%
+    );
+    padding-top: 80px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 22.5%, var(--background-light-pink) 22.5% 100%);
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      180deg,
+      var(--main-text-theme-bright) 0% 22.5%,
+      var(--background-light-pink) 22.5% 100%
+    );
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .contact-list {
-    list-style: none;
-    @include flexCentered;
-    flex-direction: column;
+  list-style: none;
+  @include flexCentered;
+  flex-direction: column;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .contact-list-item {
-    width: 100%;
-    background-color: var(--main-text-theme-bright);
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    padding: 40px 32px;
-    margin-bottom: 20px;
+  width: 100%;
+  background-color: var(--main-text-theme-bright);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px;
+  margin-bottom: 20px;
 
-    &:last-child {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 0;
-        }
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        width: calc(100% - 64px) / 3;
-        margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 64px) / 3;
+    margin-bottom: 0;
 
-        &:not(:last-child) {
-            margin-right: 32px;
-        }
+    &:not(:last-child) {
+      margin-right: 32px;
     }
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding: 40px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding: 40px;
+  }
 }
 
 .contact-list-type {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    @include font(12px, 22px, 500);
-    letter-spacing: 0.04em;
-    background-color: var(--background-coffee);
-    color: var(--main-text-theme-bright);
-    min-width: 80px;
-    height: 16px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include font(12px, 22px, 500);
+  letter-spacing: 0.04em;
+  background-color: var(--background-coffee);
+  color: var(--main-text-theme-bright);
+  min-width: 80px;
+  height: 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
 
-    @media screen and (min-width: 768px) {
-        min-width: 74px;
-        height: 28px;
-        margin-bottom: 32px;
-        @include font(16px, 30px, $fw: 500);
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 74px;
+    height: 28px;
+    margin-bottom: 32px;
+    @include font(16px, 30px, $fw: 500);
+  }
 }
 
 .contact-list-type-theme {
-    background-color: var(--background-milkshakes);
-    min-width: 130px;
+  background-color: var(--background-milkshakes);
+  min-width: 130px;
 
-    @media screen and (min-width: 768px) {
-        min-width: 138px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 138px;
+  }
 }
 
 .contact-list-title {
+  margin-bottom: 8px;
+  @include font(12px, 22px, 500);
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+    @include font(14px, 26px, 500);
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-bottom: 8px;
-    @include font(12px, 22px, 500);
-    letter-spacing: 0.04em;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
-        @include font(14px, 26px, 500);
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 8px;
-        @include font(16px, 30px, 500);
-    }
+    @include font(16px, 30px, 500);
+  }
 }
 
 .contact-list-description {
-    position: relative;
-    @include font(12px, 18px, 500);
-    color: var(--secondary-text-theme-light);
+  position: relative;
+  @include font(12px, 18px, 500);
+  color: var(--secondary-text-theme-light);
 }
 
 .contact-timetable {
-    list-style: none;
-    border-top: 1px solid var(--element-divider);
-    border-bottom: 1px solid var(--element-divider);
-    padding: 24px 0;
-    margin: 24px 0;
+  list-style: none;
+  border-top: 1px solid var(--element-divider);
+  border-bottom: 1px solid var(--element-divider);
+  padding: 24px 0;
+  margin: 24px 0;
 
-    @media screen and (min-width: 768px) {
-        padding: 32px 0;
-        margin: 32px 0;
-    }
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    margin: 32px 0;
+  }
 }
 
 .contact-timetable-text {
-    @include font(12px, 22px, 500);
+  @include font(12px, 22px, 500);
 
-    @media screen and (min-width: 768px) {
-        @include font(14px, 26px, 500);
-    }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 26px, 500);
+  }
 
-    @media screen and (min-width: 1280px) {
-        @include font(16px, 30px, 500);
-    }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 30px, 500);
+  }
 }
 
 .contact-timetable-item:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .contact-timetable-text-theme {
-    color: var(--accent-text-light);
+  color: var(--accent-text-light);
 }
 
 .contact-info {
-    list-style: none;
+  list-style: none;
 }
 
 .contact-info-item {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contact-info-link {
-    text-decoration: none;
-    @include font(12px, 18px, 500);
-    color: var(--secondary-text-theme-light);
-    transition: color 250ms linear;
+  text-decoration: none;
+  @include font(12px, 18px, 500);
+  color: var(--secondary-text-theme-light);
+  transition: color 250ms linear;
 
-    @media screen and (min-width: 768px) {
-        @include font(14px, 26px, $fw: 500);
-    }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 26px, $fw: 500);
+  }
 
-    @media screen and (min-width: 1280px) {
-        @include font(16px, 29px, $fw: 500);
-    }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 29px, $fw: 500);
+  }
 }
 
 .contact-info-link:hover,
 .contact-info-link:focus {
-    color: var(--accent-text-dark);
+  color: var(--accent-text-dark);
 }
 
 .btn-list {
-    list-style: none;
-    margin-top: 32px;
-    text-align: center;
+  list-style: none;
+  margin-top: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
 }
 
 .btn-list-item:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-list-item {
-    @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-            margin-right: 16px;
-        }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 16px;
     }
+  }
 
-    @media screen and (min-width: 1280px) {
-        &:not(:last-child) {
-            margin-right: 14px;
-        }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 14px;
     }
+  }
 }
 
 .btn-contact {
-    min-width: 162px;
-    height: 44px;
-    @include font(16px, 21px, 700);
-    border-radius: 22px;
-
+  min-width: 162px;
+  height: 44px;
+  @include font(16px, 21px, 700);
+  border-radius: 22px;
 }
 
 .btn-contact-locations {
-    background-color: var(--accent-text-dark);
-    color: var(--main-text-theme-bright);
+  background-color: var(--accent-text-dark);
+  color: var(--main-text-theme-bright);
+}
+
+.modal-btn-loc {
+  padding-left: 17px;
+  padding-right: 17px;
+  min-width: 170px;
+}
+
+.modal-btn-franch {
+  padding-left: 32px;
+  padding-right: 32px;
+  min-width: 170px;
 }
 
 .btn-contact-locations:hover,
 .btn-contact-locations:focus {
-    background-color: var(--hover-btn-dark);
+  background-color: var(--hover-btn-dark);
 }
 
 .btn-contact-franchise {
-    background-color: var(--main-text-theme-bright);
-    color: var(--accent-text-dark);
+  background-color: var(--main-text-theme-bright);
+  color: var(--accent-text-dark);
 }
 
 .btn-contact-franchise:hover,
 .btn-contact-franchise:focus {
-    background-color: var(--hover-btn-light);
+  background-color: var(--hover-btn-light);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-list {
+    flex-direction: row;
+  }
+
+  .btn-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .modal-btn-loc,
+  .modal-btn-franch {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }

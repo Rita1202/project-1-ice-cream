@@ -1,6 +1,6 @@
 .gallery {
-  background-image: linear-gradient(#fff5f6 42%, #fff 42%, #fff 58%);
-  padding-bottom: 60px;
+  background-image: linear-gradient(180deg, #fff5f6 0% 20%, #fff 20% 100%);
+  // padding-bottom: 60px;
 }
 
 .gallery-list {
@@ -61,21 +61,22 @@
   grid-area: 6/7/11/8;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
   .gallery-picture.container {
     padding: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .gallery-picture.container {
     padding: 0 62px;
+    padding-bottom: 120px;
   }
 }
 
 @media screen and (max-width: 1279px) {
   .gallery {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
   }
 }
 
