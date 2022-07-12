@@ -42,7 +42,7 @@
 
   text-align: center;
   position: relative;
-  padding: 36px 74px 16px 74px;
+  padding: 36px 74px 32px 74px;
 
   &::before {
     position: absolute;
@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .customer-wrapper {
     width: 968px;
     margin-left: auto;
