@@ -1,13 +1,15 @@
 .contact-section {
-    background-image: linear-gradient(var(--main-text-theme-bright) 30%, var(--background-light-pink) 70%);
+    background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 23%, var(--background-light-pink) 23% 100%);
     padding-top: 60px;
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
+        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 50%, var(--background-light-pink) 50% 100%);
         padding-top: 80px;
     }
 
     @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(180deg, var(--main-text-theme-bright) 0% 22.5%, var(--background-light-pink) 22.5% 100%);
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -24,20 +26,22 @@
 }
 
 .contact-list-item {
-    width: 280px;
+    width: 100%;
     background-color: var(--main-text-theme-bright);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 767px) {
-        margin-bottom: 0;
-
+    &:last-child {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc(100% - 30px) / 3;
+        width: calc(100% - 64px) / 3;
+        margin-bottom: 0;
 
         &:not(:last-child) {
             margin-right: 32px;
@@ -99,53 +103,18 @@
     position: relative;
     @include font(12px, 18px, 500);
     color: var(--secondary-text-theme-light);
-    margin-bottom: 48px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 64px;
-        @include font(14px, 23px, 500);
-    }
-
-    @media screen and (min-width: 1280px) {
-        @include font(16px, 29px, 500);
-    }
-}
-
-.contact-list-description::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    border: 1px solid var(--element-divider);
-    bottom: 0;
-    left: 0;
-    margin-bottom: -24px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: -32px;
-    }
 }
 
 .contact-timetable {
     list-style: none;
-    position: relative;
-    margin-bottom: 48px;
+    border-top: 1px solid var(--element-divider);
+    border-bottom: 1px solid var(--element-divider);
+    padding: 24px 0;
+    margin: 24px 0;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 64px;
-    }
-}
-
-.contact-timetable::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    border: 1px solid var(--element-divider);
-    bottom: 0;
-    left: 0;
-    margin-bottom: -24px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: -32px;
+        padding: 32px 0;
+        margin: 32px 0;
     }
 }
 
