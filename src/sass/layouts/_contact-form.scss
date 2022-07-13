@@ -20,6 +20,7 @@
   position: absolute;
   top: 94px;
   left: 50%;
+  padding: 40px 40px;
   width: calc(100% - 30px);
   max-width: 450px;
   min-height: 620px;
@@ -63,12 +64,11 @@
 .contact-from-desc {
   @include font(22px, 30px, 700);
   text-align: center;
-  padding: 40px 40px 0;
+  // padding: 40px 40px 0;
   margin-bottom: 20px;
 }
 
 .contact-form {
-  padding: 0 40px;
   display: flex;
   flex-direction: column;
 }
@@ -165,6 +165,10 @@
   background-repeat: no-repeat;
 }
 
+.contact-form-input-checkbox:focus + .contact-form-label-checkbox::before {
+  border: 3px solid var(--accent-text-dark);
+}
+
 .contact-form-link {
   color: var(--hover-btn-dark);
   grid-column-start: 2;
@@ -196,7 +200,7 @@
     justify-content: space-between;
 
     &::before {
-      margin-right: 7px;
+      margin-right: auto;
     }
   }
 }
