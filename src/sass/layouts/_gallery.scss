@@ -62,12 +62,23 @@
 }
 
 .gallery-picture-icon {
-  transition: border-radius 250ms linear;
-  &:hover {
-    border-radius: 50%;
-    box-shadow: 0px 2px 10px rgba(212, 20, 67, 0.3);
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    z-index: 10;
   }
 }
+
+.gallery-picture-main-icon {
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .gallery-picture.container {
     padding: 0;
