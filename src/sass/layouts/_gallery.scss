@@ -61,6 +61,24 @@
   grid-area: 6/7/11/8;
 }
 
+.gallery-picture-icon {
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+
+.gallery-picture-main-icon {
+  transition: transform 250ms linear;
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .gallery-picture.container {
     padding: 0;
