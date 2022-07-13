@@ -42,10 +42,6 @@
     padding-bottom: 18px;
   }
 
-  .page-header-container {
-    justify-content: normal;
-  }
-
   .logo {
     margin-right: 292px;
   }
@@ -77,7 +73,7 @@
 
   .page-header-navigation {
     display: block;
-    margin-right: 140px;
+    margin-right: auto;
   }
 
   .menu {
@@ -92,6 +88,8 @@
     @include font(16px, 21px, 700);
     color: var(--main-text-theme-bright);
     transition: color 250ms linear;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     &:hover,
     &:focus {

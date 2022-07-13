@@ -103,7 +103,7 @@
 }
 
 .fact-list,
-.hero-text,
+.hero-text-wrapper,
 .milk,
 .woman {
   display: none;
@@ -170,16 +170,19 @@
   .fact-item:first-child {
     margin-bottom: 16px;
   }
-
-  .hero-text {
+  
+  .hero-text-wrapper{
     display: block;
     position: relative;
     z-index: 2;
+    margin-left: 152px;
     align-self: flex-end;
+  }
+  
+  .hero-text {
     @include font(8px, 12px);
     color: var(--main-text-theme-bright);
     max-width: 114px;
-    margin-left: 152px;
   }
   .read-more-btn-hero {
     width: 18px;
@@ -257,10 +260,13 @@
     }
   }
 
+  .hero-text-wrapper {
+    margin-left: 226px;
+  }
+
   .hero-text {
     @include font(14px, 20px);
     max-width: 200px;
-    margin-left: 226px;
   }
 
   .read-more-btn-hero {
