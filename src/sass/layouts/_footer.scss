@@ -49,6 +49,12 @@
   margin-left: 28px;
 }
 
+.grow:hover, .grow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .social-list-link {
   display: flex;
   align-items: center;
