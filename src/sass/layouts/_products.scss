@@ -235,6 +235,7 @@
 
   .products-card {
     width: 368px;
+    width: calc((100% - 2 * 64px) / 2);
     padding: 165px 60px 60px 60px;
   }
 
