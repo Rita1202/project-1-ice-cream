@@ -77,16 +77,16 @@ input:checked ~ .read-more .btn-icon {
   .about-content {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
 
     &-img {
       margin-right: 32px;
-      margin-top: 40px;
     }
   }
 
   .about-text-bold {
     @include font(14px, 25px, 500);
-    margin: 40px 0 0 0;
+    margin: 0;
     padding-right: 0;
   }
 
@@ -115,7 +115,7 @@ input:checked ~ .read-more .btn-icon {
       url('../images/about/about_bg_desk_right@1x.png');
     background-repeat: no-repeat;
     background-size: 450px, 568px;
-    background-position: top 340px left, top 380px right;
+    background-position: top 340px left, top 350px right;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -127,14 +127,11 @@ input:checked ~ .read-more .btn-icon {
 
   .about-content {
     align-items: flex-start;
-
-    &-img {
-      margin-top: 60px;
-    }
+    padding-top: 60px;
   }
 
   .about-content-text {
-    margin-top: 150px;
+    padding-top: 90px;
   }
 
   .about-text-bold {
